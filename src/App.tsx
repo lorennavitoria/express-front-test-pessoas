@@ -65,18 +65,21 @@ export function App() {
 
       <form onSubmit={handleCriarPessoa} style={{ marginBottom: 20 }}>
         <input
+         name="nome"
           placeholder="Nome"
           value={nome}
           onChange={e => setNome(e.target.value)}
           required
         />
         <input
+        name="cpf"
           placeholder="CPF"
           value={cpf}
           onChange={e => setCpf(e.target.value)}
           required
         />
         <input
+        name="data_nascimento"
           type="date"
           placeholder="Data de nascimento"
           value={dataNascimento}
@@ -84,6 +87,7 @@ export function App() {
           required
         />
         <input
+        name="email"
           type="email"
           placeholder="Email"
           value={email}
